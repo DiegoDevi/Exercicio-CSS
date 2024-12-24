@@ -2,6 +2,7 @@ $color-font: #33d ;
 $color-bg-default: #a9f;
 $color-bg-boxes: #FD3;
 $font-default: Arial, Helvetica, sans-serif;
+$font-size-default: 1.6rem
 
 html {
     font-size: 62.5%;
@@ -22,15 +23,33 @@ h2 {
     margin-top: 4rem;
 }
 
-.container {
-    max-width: 1200px;
+header,
+section,
+footer {
+    display: block;
+    float: left;
+    width: 100%;
+}
 
-    // img {
-    //     width: 100%;
-    //     height: auto;
-    // }
+
+
+.container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    max-width: 90vw;
 
 }
+
+#sobre {
+    background-color: white;
+}
+
+#produtos {
+
+}
+
+@import 'vitrine'
 
 .box__container {
     background: $color-bg-boxes;
